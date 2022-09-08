@@ -75,11 +75,16 @@ code, pre, samp {
 
 /* navbar */
 #effects {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 64px;
+    height: 48px;
     width: 100vw;
+}
+#effects > button {
+    margin: 0px 24px;
+    height: 24px;
+    width: 100px;
 }
