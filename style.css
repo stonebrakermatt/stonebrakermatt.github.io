@@ -84,6 +84,10 @@ code, pre, samp {
     width: 100vw;
 }
 #effects > button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    cursor: pointer;
     margin: 0px 24px;
     height: 24px;
     width: 100px;
