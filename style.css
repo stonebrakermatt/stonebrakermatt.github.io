@@ -1,0 +1,53 @@
+/* load fonts */
+@font-face {
+    font-family: Lexend;
+    src: url('/lexend.ttf');
+}
+
+/* remove margins and padding and use border-box */
+html {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* set html and body font, height, and width and hide overflow */
+html, body {
+    color: black;
+    font: 16px/1.5em Lexend;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* remove text-decoration on links */
+a, a:active, a:visited {
+    color: @color[dark-blue];
+    text-decoration: none;
+}
+
+/* set display to block for img and iframe */
+img, iframe {
+    display: block;
+}
+
+/* set heading font */
+h1 {
+    font: 48px/1em @font[normal];
+}
+h2 {
+    font: 32px/1em @font[normal];
+}
+h3 {
+    font: 24px/1em @font[normal];
+}
+
+/* set mono font */
+code, pre, samp {
+    font: bold 16px/1.5em @font[mono];
+}
