@@ -27,7 +27,7 @@ html, body {
 
 /* remove text-decoration on links */
 a, a:active, a:visited {
-    color: @color[dark-blue];
+    color: blue;
     text-decoration: none;
 }
 
@@ -38,13 +38,13 @@ img, iframe {
 
 /* set heading font */
 h1 {
-    font: 48px/1em @font[normal];
+    font: 48px/1em Lexend;
 }
 h2 {
-    font: 32px/1em @font[normal];
+    font: 32px/1em Lexend;
 }
 h3 {
-    font: 24px/1em @font[normal];
+    font: 24px/1em Lexend;
 }
 
 /* set mono font */
@@ -71,4 +71,15 @@ code, pre, samp {
     #root {
         background-image: url('/images/maryland-heights-lg.png');
     }
+}
+
+/* navbar */
+#effects {
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 100vw;
 }
