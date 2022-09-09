@@ -82,6 +82,8 @@ code, pre, samp {
     justify-content: center;
     height: 48px;
     width: 100vw;
+    position: relative:
+    z-index: 2;
 }
 #effects > button {
     background-color: white;
@@ -99,4 +101,5 @@ code, pre, samp {
     width: 100vw;
     position: relative;
     top: -48px;
+    z-index: 1;
 }
