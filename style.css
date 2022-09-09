@@ -92,3 +92,11 @@ code, pre, samp {
     height: 24px;
     width: 100px;
 }
+
+/* screen */
+#screen {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: -48px;
+}
