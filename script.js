@@ -40,17 +40,43 @@ const setChecks = () => {
         newCheck.style.width = Math.floor(checkSize) + 'px'
         newCheck.style.top = Math.floor(Math.random() * height) + 'px'
         newCheck.style.left = Math.floor(Math.random() * width) + 'px'
-        newCheck.style.animation = 'check ' + (1 + Math.random() * 3) + 's infinite'
+        newCheck.style.animation = 'common ' + (1 + Math.random() * 3) + 's infinite'
         screen.appendChild(newCheck)
     }
 }
 const setLines = () => {
     mode = 2
     removeAllChildNodes(screen)
+    let lineSize = width
+    for (let i = 0; i < linesNum; i++) {
+        const newLine = document.createElement('div')
+        newLine.className = 'line'
+        newLine.style.height = '2px'
+        newLine.style.width = Math.floor(lineSize) + 'px'
+        newLine.style.top = Math.floor(Math.random() * height) + 'px'
+        if (Math.floor(Math.random() * 2)) {
+            newLine.style.right = -Math.floor(Math.random() * width) + 'px'
+        } else {
+            newLine.style.left = -Math.floor(Math.random() * width) + 'px'
+        }
+        newLine.style.animation = 'common ' + (1 + Math.random() * 3) + 's infinite'
+        screen.appendChild(newLine)
+    }
 }
 const setStars = () => {
     mode = 3
     removeAllChildNodes(screen)
+    let starSize = 5
+    for (let i = 0; i < starsNum; i++) {
+        const newStar = document.createElement('div')
+        newStar.className = 'star'
+        newStar.style.height = Math.floor(starSize) + 'px'
+        newStar.style.width = Math.floor(starSize) + 'px'
+        newStar.style.top = Math.floor(Math.random() * height) + 'px'
+        newStar.style.left = Math.floor(Math.random() * width) + 'px'
+        newStar.style.animation = 'common ' + (1 + Math.random() * 3) + 's infinite'
+        screen.appendChild(newStar)
+    }
 }
 
 // attach event listeners to buttons
