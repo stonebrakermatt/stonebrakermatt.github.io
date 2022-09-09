@@ -49,12 +49,12 @@ h3 {
 
 /* set mono font */
 code, pre, samp {
-    font: bold 16px/1.5em @font[mono];
+    font: bold 16px/1.5em monospace;
 }
 
 /* root element */
 #root {
-    background-image: url('/images/maryland-heights-sm.png');
+    background-image: url('images/maryland-heights-sm.png');
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -64,12 +64,12 @@ code, pre, samp {
 /* change background resolution for large screens */
 @media (min-width: 900px) {
     #root {
-        background-image: url('/images/maryland-heights-md.png');
+        background-image: url('images/maryland-heights-md.png');
     }
 }
 @media (min-width: 1500px) {
     #root {
-        background-image: url('/images/maryland-heights-lg.png');
+        background-image: url('images/maryland-heights-lg.png');
     }
 }
 
@@ -102,4 +102,21 @@ code, pre, samp {
     position: relative;
     top: -48px;
     z-index: 1;
+}
+
+.check {
+    background-color: rgba(255, 255, 255, 0.25);
+    position: absolute;
+}
+
+@keyframes check {
+    0% {
+        transform: scale(1.00);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.00);
+    }
 }
