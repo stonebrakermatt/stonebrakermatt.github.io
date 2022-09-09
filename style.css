@@ -82,7 +82,7 @@ code, pre, samp {
     justify-content: center;
     height: 48px;
     width: 100vw;
-    position: relative:
+    position: relative;
     z-index: 2;
 }
 #effects > button {
